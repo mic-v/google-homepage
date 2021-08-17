@@ -41,14 +41,14 @@ section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
-    margin: auto;
+    height: 90%;
+
     justify-content: center;
     align-items: center;
 }
 
 section > header {
-    margin: 1.5em auto;
+    margin: 1.0em auto;
 }
 
 section > ul {
@@ -80,6 +80,21 @@ section > p {
     display: flex;
 }
 
+.search input[type=text] {
+    background-image: url('searchicon.png');
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    background-size: 1.5em;
+    
+    padding-left: 40px;
+    border: 1px rgb(196, 196, 196) solid;
+    transition: all 0.2s ease-out;
+}
+
+.search input[type=text]:focus {
+    outline: 0;
+    box-shadow: 1px 1px 6px rgb(196, 196, 196);
+}
 .search-bar {
     width: 85%;
     padding: 0px 20px;
@@ -88,6 +103,9 @@ section > p {
     border-radius: 5em;
     margin: 0 auto;
 }
+
+
+
 
 
 
